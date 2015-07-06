@@ -1,22 +1,50 @@
-<!doctype html>
+<!DOCTYPE html>
 
-<html>
-  <head>
-    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="js/map.js"></script>
-    <title>Police Shootings</title>
-    <!-- Get the leaflet.js library and stylesheet -->
-    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
-    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
-    <link rel="stylesheet" href="css/main.css"/>
-  </head>
+<html lang="en">
+    <!--
+        Ian Durra
+        INFO 343
+        HW #4
+        07/05/15
+        HTML file for Police Shooting
+    -->
+	<head>
+		<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="js/map.js"></script>
+		<title>Police Shootings</title>
+		<!-- Get the leaflet.js library and stylesheet -->
+		<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+		<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
+		<link rel="stylesheet" href="css/main.css"/>
+	</head>
 
-  <body>
-    <div id="container" style="width:500px; height:500px;"></div>
-    <script>
-      
-    	// This is where you should execute your drawMap function // 
-
-    </script>
-  </body>
+	<body>
+		<div id="main">
+			<h1>Police Shootings by Gender</h1>
+			<div id="container"></div>
+			<div id="description">
+				<div id="key">
+					Key: <span id="red">Female</span><span id="blue"> Male</span>
+				</div>
+				<p id="first">
+					Displayed above is a map depicting police shootings arranged by gender. Blue dots represent police shootings involving male suspects while red dots represent shootings involving female suspects. The map shows a clear disparity between the genders of victims of police shootings being heavily skewed towards males.
+				</p>
+				<blockquote cite="http://time.com/3607956/ferguson-is-about-gender-not-just-race/">
+					"A lot has been said and will continue to be said on the issue of race... but perhaps there are a few things to say on the subject of masculinity as well"<br>
+				</blockquote>
+				<p id="last">Laura Kipnis - <em>"Ferguson Is About Gender Not Just Race"</em></p>
+			</div>
+			<div id="source">
+				<p><a href="data/response.json"><em>Source Material for Map Data</em></a></p>
+				<p><a href="http://time.com/3607956/ferguson-is-about-gender-not-just-race/"><em>Laura Kipnis Article</em></a></p>
+			</div>
+			<div id="additional">
+				<p>Additional</p>
+			</div>
+		</div>
+		<script>
+			// This is where you should execute your drawMap function //
+			drawMap()
+		</script>
+	</body>
 </html>

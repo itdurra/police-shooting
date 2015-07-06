@@ -1,1 +1,52 @@
-/* You'll probably want to add some styles here */
+/*
+Ian Durra
+INFO 343
+HW #4
+07/05/15
+CSS file for Police Shooting
+*/
+
+#container{
+	width: 500px;
+	height: 500px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#key{
+	background-color: gray;
+	font: 18px solid black;
+}
+
+#red{
+	color: red;
+}
+
+#blue{
+	color: blue;
+}
+
+#main, #description, #source, #additional{
+	text-align: center;
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+	border: 1px solid gray;
+}
+
+#description{
+	text-align: left;
+}
+
+#last{
+	text-align: right;
+}
+
+#first{
+	text-align: center;
+}
+
+#main{
+	border: none;
+}
